@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+.Container {
+  display: flex;
+  overflow: hidden;
+  height: 115vh;
+  margin-top: -100px;
+  padding-top: 100px;
+  position: relative;
+  width: 100%;
+}
+
+.Left,
+.Right {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  padding: 0.5rem;
+}
+
+.Left {
+  background-color: #00061a;
+  width: 25%;
+  border-right: 2px solid rgb(4, 4, 4);
+}
+/*this for menu*/
+.Right {
+  flex: 1;
+  background-color: #082224;
+}
+
+.leftGrid {
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+.rightGrid {
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+.gridElementLeft {
+  border: 1px solid rgb(0, 5, 5);
+  padding-bottom: 50px;
+  border-bottom: 2px solid black;
+  margin: 10px;
+  text-align: center;
+  background-color: rgb(156, 254, 254);
+}
+.gridElementRight {
+  border: 1px solid rgb(10, 10, 10);
+  padding-bottom: 50px;
+  border-bottom: 2px solid black;
+  height: 150px;
+  margin: 20px;
+  text-align: center;
+  background-color: rgb(245, 246, 249);
+}
+#tab {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+#men {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.itemName {
+  font-size: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.tableNo {
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.Price {
+  font-size: 20px;
+}
+
+.Type {
+  font-size: 19px;
+}
+/* for search bar of food*/
+#foodSearch {
+  width: 600px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 2px solid #0a0a0a;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #76c2f5;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+#foodSearch:focus {
+  width: 100%;
+}
+/* for search bar of table */
+#tableSearch {
+  height: 40px;
+
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #050303;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+#tableSearch:focus {
+  width: 100%;
+}
+/* surroundings of pop box*/
+.modelOverlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 80px;
+
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(13, 13, 14);
+  background-color: rgba(7, 7, 7, 0.3);
+}
+
+.model-content {
+  background-color: rgb(249, 246, 247);
+  /* justify-content: center; */
+  padding: 20px;
+  border: 1px solid #0e0d0d;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 2fr 4fr 3fr 1fr 3fr 3fr 1fr;
+  grid-row-gap: 5px;
+  border-radius: 10px;
+  margin: auto;
+}
+ {
+}
+
+BUTTON {
+  width: 20px;
+}
+
+#Remove {
+  width: auto;
+  background-color: rgb(215, 102, 102);
+}
+
+#Total {
+  grid-column-start: 3;
+  grid-column-end: 7;
+  padding-top: 20px;
+}
+
+.tableNo {
+  width: 100px;
+}
+
+.Bill {
+  width: 70px;
+}
+
+.totalItems {
+  width: 50px;
+}
+#Generate {
+  width: auto;
+  background-color: rgb(160, 142, 176);
+}

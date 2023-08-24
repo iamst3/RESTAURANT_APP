@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Restaurant-App-By-Saloni-Tiwari</title>
+</head>
+
+<body>
+  <div class="Container">
+      <div class="Left">
+        <div id="tab"style="text-align: center; font-size: larger; font-weight:bold;color: white;">Tables</div>
+        <div>
+          <input type="text" id="tableSearch" onkeyup="searchTables()" placeholder="Search for tables by number.." title="Type in a name">
+        </div>
+        <br>
+
+        <div style="background-color:white;" class="leftGrid">
+
+
+          <div class="gridElementLeft">
+            <div class="tableNo">Table-1</div>
+            <div class="Bill">0.00</div>
+            <div class="totalItems"> 0 </div>
+            <div hidden class="itemTypes">
+
+            </div>
+            <div hidden class="itemNos">
+
+            </div>
+            <div hidden class="itemPrices">
+
+            </div>
+
+            <div class="modelOverlay">
+
+             </div>
+          </div>
+
+
+          <div class="gridElementLeft">
+            <div class="tableNo">Table-2</div>
+            <div class="Bill"> 0.00</div>
+            <div class="totalItems"> 0 </div>
+            <div hidden class="itemTypes">
+
+            </div>
+            <div hidden class="itemNos">
+
+            </div>
+            <div hidden class="itemPrices">
+
+            </div>
+
+            <div class="modelOverlay">
+
+          </div>
+          </div>
+
+          <div class="gridElementLeft">
+
+            <div class="tableNo">Table-3</div>
+            <div class="Bill"> 0.00</div>
+            <div class="totalItems"> 0 </div>
+            <div hidden class="itemTypes">
+
+            </div>
+            <div hidden class="itemNos">
+
+            </div>
+            <div hidden class="itemPrices">
+
+            </div>
+
+            <div class="modelOverlay">
+
+          </div>
+          </div>
+
+          <div class="gridElementLeft">
+            <div class="tableNo">Table-4</div>
+            <div class="Bill"> 0.00</div>
+            <div class="totalItems"> 0 </div>
+            <div hidden class="itemTypes">
+
+            </div>
+            <div hidden class="itemNos">
+
+            </div>
+            <div hidden class="itemPrices">
+
+            </div>
+
+            <div class="modelOverlay">
+
+          </div>
+          </div>
+
+          <div class="gridElementLeft">
+            <div class="tableNo">Table-5</div>
+            <div class="Bill"> 0.00</div>
+            <div class="totalItems"> 0 </div>
+            <div hidden class="itemTypes">
+
+            </div>
+            <div hidden class="itemNos">
+
+            </div>
+            <div hidden class="itemPrices">
+
+            </div>
+
+            <div class="modelOverlay">
+
+          </div>
+          </div>
+
+          
+
+        </div>
+      <!-- for menu -->
+      </div> 
+      <div class="Right">
+        <div style="text-align: center; font-size: large;font-weight: bold;" id="men" >Menu</div>
+        <div>
+          <input type="text" id="foodSearch" onkeyup="searchFoods()" name="search" placeholder="Search for foods by Name or category..👩‍🍳🍔🍕" title="Type in a name" style="text-align: center;">
+        </div>
+        <br>
+        <div style="background-color:RGB(240, 255, 240,0.5)" class="rightGrid">
+          <div class="gridElementRight" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+            <div class="itemName">French Fries </div>
+            <div class="Price">70.00</div>
+            <div class="Type">Snacks</div>
+          </div>
+          <div class="gridElementRight" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+            <div class="itemName">Aloo Tikki </div>
+            <div class="Price">65.00</div>
+            <div class="Type">Snacks</div>
+          </div>
+          <div class="gridElementRight" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+            <div class="itemName">Coke </div>
+            <div class="Price">70.00</div>
+            <div class="Type">Drinks</div>
+          </div>
+          <div class="gridElementRight" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+            <div class="itemName">Coffee</div>
+            <div class="Price">75.00</div>
+            <div class="Type">Drinks</div>
+          </div>
+          <div class="gridElementRight" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+            <div class="itemName">Latte </div>
+            <div class="Price">120.00</div>
+            <div class="Type">Coffee</div>
+          </div>
+          <div class="gridElementRight" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+            <div class="itemName">Americano </div>
+            <div class="Price">150.00</div>
+            <div class="Type">Coffee</div>
+          </div>
+          <div class="gridElementRight" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+            <div class="itemName">Pizza </div>
+            <div class="Price">300.00</div>
+            <div class="Type">European</div>
+          </div>
+          <div class="gridElementRight" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+            <div class="itemName">Chocolate </div>
+            <div class="Price">50.00</div>
+            <div class="Type">Dessert</div>
+          </div>
+          <div class="gridElementRight" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+            <div class="itemName">Cup Cakes 25 </div>
+            <div class="Price">70.00</div>
+            <div class="Type">Dessert</div>
+          </div>
+          <div class="gridElementRight" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+            <div class="itemName">Veg-Biryani </div>
+            <div class="Price">150.00</div>
+            <div class="Type">Main course</div>
+          </div>
+          <div class="gridElementRight" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+            <div class="itemName">Paneer roll </div>
+            <div class="Price">120.00</div>
+            <div class="Type">Main course</div>
+          </div>
+          <div class="gridElementRight" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+            <div class="itemName">Soup </div>
+            <div class="Price">90.00</div>
+            <div class="Type">Entree</div>
+          </div>
+          <div class="gridElementRight" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+            <div class="itemName">Croissant</div>
+            <div class="Price">150.00</div>
+            <div class="Type">Starter</div>
+          </div>
+        </div>
+      </div>
+</div>
+
+  </div>
+  <script type="text/javascript" src="res.js">
+  </script>
+
+
+
+
+
+</body>
+
+</html>
